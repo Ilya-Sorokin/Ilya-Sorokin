@@ -1,0 +1,417 @@
+/* Отключаем стили bootstrap у карусели, чтобы она была на всю ширину */
+#Caurosel {
+  padding: 0 !important;
+}
+
+/*создать секцию почерка: по адаптации, и по категории размера+стиля (кнопка, глава, глава, стандарт) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@400;700&display=swap");
+/*для новостей и сотрудников */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*для заголовков новостей и сотрудников */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+.fonts-Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+}
+
+.fonts-Sans {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13.5px;
+}
+/*для новостей и сотрудников */
+.fonts-Roboto {
+  font-family: 'Roboto Slab', serif;
+}
+/*для заголовков новостей и сотрудников */
+.fonts-RobotoHead {
+  font-family: 'Roboto Slab', serif;
+}
+
+/*выравнивание текста в section, что перед картами */
+@media (max-width: 992px) {
+  .textСenter {
+    text-align: center;
+  }
+}
+/* адаптивное изменение шрифта */
+@media (min-width: 350px) {
+  .textSize {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .textSize {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .textSize {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textSize {
+    font-size: 15px;
+  }
+}
+
+/*Диагональный блок */
+
+@media (min-width: 991px) {
+  .card1 {
+    z-index: 1;
+    bottom: 20px;
+  }
+
+  .card2 {
+    z-index: 1;
+    bottom: 45px;
+  }
+}
+/* РАЗРЕШЕНИЕ КАРТИНОК В НОВОСТЯХ */
+@media (max-width: 992px) {
+  .img_news {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .img_news {
+    overflow: hidden;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+  }
+}
+
+/* РАЗРЕШЕНИЕ КАРТЫ GOOGLE В МОДАЛЬНОМ ОКНЕ */
+@media (max-width: 992px) {
+  .img_maps {
+    max-height: 400px;
+    max-width: 370px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img_maps {
+    max-width: 900px;
+    max-height: 700px;
+  }
+}
+/* РАЗРЕШЕНИЕ ДЛЯ СЛАЙДЕР НА ГЛАВНОЙ СТРАНИЦЕ */
+/* ВЫСОТА ПРИНУДИТЕЛЬНО ОДНОГО РАЗМЕР А ШИРИНА ДО МАКСИМАЛЬНОГО, IMG-FLUID ПОДСТРОИТ ШИРИНУ САМ, А СКАЧКОВ СТРАНИЦЫ ИЗ-ЗА РАЗНОСТИ РАЗМЕРОВ НЕ БУДЕТ */
+@media (max-width: 992px) {
+  .slide-big {
+    overflow: hidden;
+    height: 354.917px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* 1519.2×954.917 */
+@media (min-width: 992px) {
+  .slide-big {
+    overflow: hidden;
+    width: 100%;
+    height: 954.917px;
+    object-fit: cover;
+  }
+}
+
+/*  ДЛЯ ВЫСОТЫ КАРТОЧЕК НА ГЛАВНОЙ СТРАНИЦЕ */
+
+.z-index-1 {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+}
+
+.z-index-2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 45px;
+}
+
+/* отступы для секторов страниц */
+
+.SectionBord-b {
+  padding-bottom: 147 px;
+}
+
+.SectionBord-t {
+  padding-top: 147 px;
+}
+
+/* отступы для элементов страниц */
+
+.elBord-t {
+  padding-top: 15 px;
+}
+
+.elBord-b {
+  padding-bottom: 15 px;
+}
+
+/* стиль для footer убрать списку маркеры */
+
+li:not(.notStyle) {
+  list-style-type: none;
+}
+
+/* ДЕКОРАТИВНЫЙ СПИСОК */
+
+.push {
+  list-style: none;
+  font-family: "Lucida Sans";
+}
+
+.push li {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  color: #707070;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4f5151;
+  content: "";
+  left: 0;
+  transition: 0.3s ease-in-out;
+  top: 27px;
+}
+
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #4f5151;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+
+.push li:hover:before {
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.push li:last-child:after {
+  content: none;
+}
+
+/*  END ДЕКОРАТИВНЫЙ СПИСОК END */
+
+/* _______________________Для  на EDIT__PAGE TABLE + MESSAGE + Анимации гивки загрузки _____________________________*/
+.border_tr {
+  border-bottom: 2px solid #ff4500;
+  color: #ff4500;
+  transition: 0.1s;
+}
+
+#loader {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+  opacity: 0.9;
+  z-index: 30;
+}
+#loader span {
+  display: block;
+  background: url(/img/loader.gif);
+  width: 128px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -7px 0 0 -56px;
+}
+#mes-edit {
+  display: none;
+  color: #000;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -200px;
+  font-weight: bold;
+  background: #fff;
+}
+
+/* _______________________Для большого контента_____________________________*/
+
+/* ДЛЯ ТЕКСТА В ОГРНИЧЕНОМ ПО РАЗМЕРАМ БЛОКЕ */
+.clip {
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap;
+  width: 160px;
+  height: 150px;
+}
+
+.scroll-box {
+  white-space: pre-wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ________________________Для ПОИСКА в таблице EDIT___________________________*/
+.results tr[visible="false"],
+.no-result {
+  display: none;
+}
+.results tr[visible="true"] {
+  display: table-row;
+}
+.searchCount {
+  padding: 8px;
+  color: #ccc;
+}
+/* END  EDIT__PAGE TABLE+MESSAGE END*/
+
+/* ЦВЕТА И ФОРМЫ */
+
+/* ЦВЕТА Ссылки */
+
+.my_link_1 {
+  color: #f1d165;
+  outline: none;
+  text-decoration: none;
+}
+
+.my_link_1:hover {
+  color: #ff4500;
+  outline: none;
+  text-decoration: underline;
+}
+
+.my_link_2 {
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+.my_link_2:hover {
+  color: dodgerblue;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* ФОРМЫ  КНОПОК - ЗАКРУГЛЕНИЕ */
+.btn-circle {
+  border-radius: 35px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  white-space: normal; /* восстанавливаем свойству значение по умолчанию */
+}
+
+/* ЦВЕТА  КНОПОК И ССЫЛОК*/
+.orangeRed_text {
+  color: #ff4500;
+}
+
+.orangeRed_text:hover {
+  color: #f1d165;
+}
+
+/* для оранжевости кнопок */
+.orangeRed_btn {
+  background-color: #ff4500;
+  color: #ffffff;
+}
+
+.orangeRed_btn:hover {
+  color: #f1d165;
+}
+
+/* Оранжевый для белых кнопок на темном  */
+.orangeWhite_btn {
+  background-color: #ffffff;
+  color: #ff4500;
+}
+
+.orangeWhite_btn:hover {
+  color: #f1d165;
+}
+
+/* минимальная ширина строк в таблицах */
+
+td div {
+  min-height: 50px;
+}
+/*  как далеко столбцы друг от друга  в таблицах */
+td {
+  padding-left: 10px;
+}
+
+/*  */
+
+/* Модальные окна  */
+
+.div_head {
+  background-color: grey;
+  color: #fff;
+}
+
+.modal-content {
+  border-color: #ff4500;
+  border-width: 2px;
+}
+
+.modal-header {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+/* ВЫДЕЛЕНИЕ ЭЛЕМЕНЕТОВ BOOTSTRAP ПРИ НАВЕДЕНИИ */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+/* СТИЛИ ЭЛЕМЕНЕТОВ NAVIGATION */
+.data-menu {
+  margin-right: 30px;
+}
+
+.data-menu:hover {
+  transition: 0.7s;
+  color: #ff4500 !important;
+  /* font-weight: bold; */
+  text-shadow: 1px 1px 2px orange, 0 0 1em white;
+}
+
+/* ИЗМЕНЕНИЕ АВАТАРКИ В ПРОФИЛЕ */
+.imgProfile:hover {
+  filter: grayscale(1);
+}
+.editAva {
+  font-size: medium;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+  color: #ff4500;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  top: 40%;
+  transform: translate(0, -50%);
+}

@@ -1,0 +1,147 @@
+
+/* Отключаем стили bootstrap у карусели, чтобы она была на всю ширину */
+ #Caurosel {
+    padding: 0 !important;
+  }
+
+
+
+
+
+/*создать секцию почерка: по адаптации, и по категории размера+стиля (кнопка, глава, глава, стандарт) */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@400;700&display=swap');
+
+   .fonts-Montserrat 
+   {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+   }
+
+   .fonts-Sans
+   {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 13.5px;
+     
+   }
+  
+  /*выравнивание текста в section, что перед картами */
+@media (max-width: 992px) {
+  .textСenter
+  {
+    text-align: center;
+    
+  }
+}
+ /* адаптивное изменение шрифта */
+@media (min-width: 350px) {
+    .textSize {
+      font-size: 14px;
+    }
+  }
+@media (min-width: 768px) {
+    .textSize {
+      font-size: 14px;
+    }
+  }
+ 
+  @media (min-width: 992px) {
+    .textSize {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .textSize {
+      font-size: 15px;
+    }
+  } 
+
+
+                                          /*Диагональный блок */
+
+  @media (min-width: 991px) {
+  .card1
+  {
+    z-index: 1; 
+    bottom: 20px;
+  }
+
+
+                                                        /* смещение из родителя для карточек на гл.странице */
+  .card2
+  {
+    z-index: 1; 
+    bottom: 45px;
+  }
+
+}
+
+.z-index-1
+{
+  
+  z-index: 1; 
+  bottom: 20px;
+    
+}
+
+.z-index-2
+{
+  
+  z-index: 1; 
+  bottom: 45px;
+}
+
+                                                  /* стиль для footer убрать списку маркеры */
+
+li:not(.notStyle) { list-style-type: none; }
+
+
+
+/* отступы для секторов страниц */
+
+#SectionBord-b
+{
+  padding-bottom: 147 px;
+}
+
+.SectionBord-t
+{
+  padding-top: 147 px;
+}
+
+/* отступы для элементов страниц */
+
+.elBord-t
+{
+  padding-top: 15 px;
+}
+
+.elBord-b
+{
+  padding-bottom: 15 px;
+}
+
+
+
+
+
+
+
+/* 
+
+.btn:hover span{
+    background-color: white;
+    color: rgb(130, 4, 248);
+    margin-left: 6px;
+    border-color: white;
+    
+}
+
+.btn:hover 
+{
+    background-color: white;
+     size: 10px; 
+    color: orange;
+    position: relative; 
+}
+     */
